@@ -4,7 +4,7 @@ import Dropdown from './Dropdown';
 function App() {
   return (
     <div className="App">
-      <h1>Simple Dropdown Example</h1>
+      <h1>Simple Dropdown Exampe</h1>
       <Dropdown />
     </div>
   );
