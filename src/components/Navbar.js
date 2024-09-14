@@ -8,11 +8,16 @@ export default function Navbar () {
     setIsOpen(!isOpen); 
   };
 
-  return (
-    <nav>
+  return (  
+    <Router>
+      <div className="navbar">
+      <nav>
 
-    </nav>
+      </nav>
+    </div>   
 
+    </Router> 
+    
   )
 
   
