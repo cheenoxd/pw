@@ -1,24 +1,37 @@
-import React from "react";
-import './css/Navbar.css'
+import React, { useState } from 'react';
+import './Navbar.css';
+import DropdownMenu from "./DropdownMenu";
 
 export default function Navbar () {
 
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen); 
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
   };
 
-  return (  
-    <Router>
-      <div className="navbar">
-      <nav>
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
 
-      </nav>
-    </div>   
-
-    </Router> 
+  return (
+      
+    <div className="App">
+      <header className="App-header">
+        <div
+          className="menu"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <button>Dropdown Menu</button>
+          {isDropdownVisible && <DropdownMenu />}
+        </div>
+      </header>
+    </div>
+  );
+   
     
-  )
+  
 
   
 
