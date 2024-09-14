@@ -1,0 +1,45 @@
+.hamburger {
+  position: fixed;
+  right: 0;
+  margin-right: 20px;
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.menu {
+  overflow: hidden;
+  background-color: #f4f4f4;
+  margin-top:1px;
+}
+
+.menu ul {
+  padding: 1px;
+  list-style: none;
+}
+
+.menu ul li {
+  padding: 1px 0;
+  font-size: 18px;
+  text-align:center;
+  
+}
+
+.menu ul li:last-child {
+  border-bottom: none;
+}
+.link {
+  color: #000000;
+}
+.link:hover {
+   color:black;
+}
