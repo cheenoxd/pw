@@ -67,9 +67,9 @@ export default function Navbar() {
       >
         <ul>
           <li><Link to="/about" className="link"> About Me</Link></li>
-          <li><Link to="/Projects"> Projects</Link></li>
-          <li><Link to="/Resume"> Resume</Link></li>
-          <li><Link to="/Contact"> Contact Me</Link></li>
+          <li><Link to="/Projects" className="link"> Projects</Link></li>
+          <li><Link to="/Resume" className="link"> Resume</Link></li>
+          <li><Link to="/Contact" className="link"> Contact Me</Link></li>
         </ul>
       </motion.div>
     </div>
