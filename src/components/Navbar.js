@@ -53,6 +53,8 @@ export default function Navbar() {
       </motion.div>
 
       {/* Dropdown Menu */}
+      {isOpen && <div className="overlay"></div>}
+
       <motion.div
         className="menu"
         initial={false}
@@ -73,5 +75,6 @@ export default function Navbar() {
         </ul>
       </motion.div>
     </div>
-  );
+    
+   );
 }
