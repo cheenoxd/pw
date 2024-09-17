@@ -19,12 +19,19 @@
 .menu {
   overflow: hidden;
   background-color: #f4f4f4;
-  margin-top:1px;
+  margin-top:px;
+  justify-content: center;
 }
 
 .menu ul {
+  position:fixed;
+  z-index: 1000;
+  top:10px;
+  left:0;
   padding: 1px;
   list-style: none;
+
+  
 }
 
 .menu ul li {
@@ -39,7 +46,14 @@
 }
 .link {
   color: #000000;
+  text-decoration:underline;
 }
 .link:hover {
    color:black;
+}
+
+l-helix{
+  position:staic;
+  left: 10px;
+
 }

@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
 import React from 'react';
 import '../css/Home.css';
+import { helix } from 'ldrs'
+helix.register()
 
 
 
 export default function Home () {
 const text = "Zesan Rahim".split(" ");
-
+ 
   return (
     <div id = "home">
       <div id = "about-me">

@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
 
+
+
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,9 +13,17 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+
   return (
-    <div style={{ backgroundColor: 'transparent', padding: '10px' }}>
+    <div>
+      <l-helix size="45" speed="2.5" color="black"></l-helix>
+
+
+    <div style={{ backgroundColor: 'transparent', padding: '10px' }}
+     
+    >
       {/* Hamburger Icon */}
+      
       <motion.div
         className="hamburger"
         onClick={toggleMenu}
@@ -74,6 +85,7 @@ export default function Navbar() {
           <li><Link to="/Contact" className="link"> Contact Me</Link></li>
         </ul>
       </motion.div>
+    </div>
     </div>
     
    );
