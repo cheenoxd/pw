@@ -1,12 +1,36 @@
+
 #p {
     font-size: 16px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
+    display: -webkit-box;
+   -webkit-line-clamp: 3; /* Number of lines you want to show */
+   -webkit-box-orient: vertical;
+   overflow: hidden;
   }
 
 #about-me{
-  margin-top: 100px;
+  width: 70%;
+  margin: 0 auto;
+  max-height: 200px;
+  overflow:hidden;
+  margin-left: 15%;
+  margin-top:15%;
+  overflow: visible;
+  max-height: none;
 
 }
+header{
+  align-content: center;
+  margin-left: 18%;
+  display: inline-block
+
+
+}
+l-helix {
+  display: inline-block;
+  margin-left: 15%;
+}
+
   

@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from 'react';
 import '../css/Home.css';
 import { helix } from 'ldrs'
-helix.register()
 
 
 
@@ -10,7 +9,15 @@ export default function Home () {
 const text = "Zesan Rahim".split(" ");
  
   return (
+    <div className="underline">
     <div id = "home">
+      <l-helix size="45" speed="2.5" color="black"></l-helix>
+      <header>
+      Zesan Rahim
+      </header>
+      
+      
+
       <div id = "about-me">
       <h2>About me</h2>
       <p>
@@ -34,7 +41,7 @@ const text = "Zesan Rahim".split(" ");
     </div>
 
     </div>
-    
+    </div>
   );
 }
 

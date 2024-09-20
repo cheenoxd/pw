@@ -16,7 +16,6 @@ export default function Navbar() {
 
   return (
     <div>
-      <l-helix size="45" speed="2.5" color="black"></l-helix>
 
 
     <div style={{ backgroundColor: 'transparent', padding: '10px' }}
@@ -66,7 +65,7 @@ export default function Navbar() {
       {/* Dropdown Menu */}
       {isOpen && <div className="overlay"></div>}
 
-      <motion.div
+      <motion.div  
         className="menu"
         initial={false}
         animate={isOpen ? "open" : "closed"}
