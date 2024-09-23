@@ -15,6 +15,7 @@ function App() {
   return (
   <BrowserRouter>
     <div>
+      
      <Navbar /> 
    
         <Routes>

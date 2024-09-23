@@ -1,67 +1,16 @@
-.hamburger {
-  position: fixed;     
-  top: 3%;         
-  right: 15%;   
-  width: 30px;
-  height: 24px;
+.navbar{
+  height:100px;
+
+}
+
+.wrapper{
+  max-width: 1366px;
+  margin:auto;
   display: flex;
-  flex-direction: column;
+  align-items:center;
   justify-content: space-between;
-  cursor: pointer;
+  height:100%
 }
-html {
-  scroll-behavior: smooth;
+span{
+  font-weight: bold;
 }
-
-
-.bar {
-  height: 3px;
-  background-color: black;
-  border-radius: 3px;
-  }
-
-.menu {
-  position:fixed;
-  overflow: hidden;
-  top: 100px;
-  background-color: #f4f4f4;
-  margin-top:10px;
-  justify-content: center;
-  z-index: 1000;
-  left: 85%;
-  
-}
-
-.menu ul {
-  position:fixed;
-  z-index: 1000;
-  top:10px;
-  left:0;
-  padding: 1px;
-  list-style: none;
-  text-align:center;
-  justify-content: center; 
-  align-items: center; 
-  z-index: 1000;
-  
-}
-
-.menu ul li {
-  padding: 1px 0;
-  font-size: 18px;
-  text-align:center;
-  
-}
-
-.menu ul li:last-child {
-  border-bottom: none;
-  text-align:center;
-}
-.link {
-  color: #000000;
-}
-.link:hover {
-   color:black;
-   text-decoration: underline;
-}
-
