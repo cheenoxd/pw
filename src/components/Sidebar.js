@@ -8,14 +8,14 @@ export default function Sidebar() {
 
    const variants = {
     open: {
-        clipPath: "circle(1200px at 50px 50px)",
+        clipPath: "circle(1200px at 50% 50%)",
         transition:{
             type:"spring",
             stiffness:20,
         }
     },
     closed: {
-        clipPath: "circle(30px at 50px 50px)",
+        clipPath: "circle(30px at 82.25% 6%)",
         transition:{
             delay:0.5,
             type:"spring",

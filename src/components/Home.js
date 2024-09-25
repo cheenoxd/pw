@@ -11,9 +11,9 @@ const text = "Zesan Rahim".split(" ");
   return (
     <div className="underline">
     <div id = "home">
-      <l-helix id="helix" size="45" speed="2.5" color="white"></l-helix>
+
       <header>
-      Zesan Rahim
+
       </header>
       
       <div id="about-me" style={{ marginTop: '100vh' }}>

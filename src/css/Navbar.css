@@ -1,16 +1,39 @@
-.navbar{
-  height:100px;
-
+.navbar {
+  top: 0;
+  position:fixed;
+  left:50%;
+  height: 100px;
+  display: flex; 
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  background-color: #f4f4f4; /* You can change this to whatever color you like */
 }
 
-.wrapper{
+.wrapper {
   max-width: 1366px;
-  margin:auto;
+  margin: auto;
   display: flex;
-  align-items:center;
-  justify-content: space-between;
-  height:100%
+  align-items: center;
+  justify-content: center; /* Centers content inside the wrapper */
+  height: 100%;
+  text-align: left;
+  position: relative;
 }
-span{
+
+span {
+  display:fixed;
+  height:50px;
+  left:250px;
   font-weight: bold;
+  text-align: center;
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.helix-container {
+  height:20px;
+  top: 200px;
+  position: fixed;
+  top: 20px; /* Adjust this value to fine-tune the position */
+  left: 270px; /* Adjust this value to fine-tune the position */
+  z-index: 1000; 
 }
