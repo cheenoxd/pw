@@ -1,47 +1,32 @@
 import { motion } from "framer-motion";
-import React from 'react';
-import '../css/Home.css';
-import { helix } from 'ldrs'
+import React, { useEffect, useRef } from 'react';
+import '../css/Home.css';  // Existing Home styles
+import '../css/TrianglesAnimation.css';  // New CSS for the animated triangles
+import { helix } from 'ldrs';
 
+helix.register();
 
+export default function Home() {
+  const wrapRef = useRef(null);
 
-export default function Home () {
-const text = "Zesan Rahim".split(" ");
- 
+  useEffect(() => {
+    const wrap = wrapRef.current;
+    const total = 200;
+
+    // Generate 200 triangles dynamically
+    for (let i = 0; i < total; i++) {
+      const tri = document.createElement('div');
+      tri.classList.add('tri');
+      wrap.appendChild(tri);
+    }
+  }, []);
+
   return (
-    <div className="underline">
-    <div id = "home">
-
-      <header>
-
-      </header>
-      
-      <div id="about-me" style={{ marginTop: '100vh' }}>
-        <h2>About me</h2>
-        <p>
-           Hello! I'm Zesan Rahim, a passionate Software Developer
-           based out of Hamilton, Ontario, Canada. I love building a variety of 
-           different projects ranging from web applications
-           and interactive user interfaces to full stack projects as well
-           as innovative software solutions.
-        </p>
-        <p>
-          I'm always excited to explore new technologies,
-          experiment with creative ideas, and solve real-world problems 
-          through coding and development.
-        </p>
-        <p>
-          I currently am a Computer Science student at Carleton University
-          focused on Machine Learning and Artificial Intelligence.
-          Outside of school, I like to immerse myself in extra-curriculars,
-          video games, and exploring. 
-        </p>
-      </div>
+    <div className="home-container">
+      <div className="wrap" ref={wrapRef}></div>
+      {/* Add other components or content for your Home page here */}
+      <motion.div className="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+      </motion.div>
     </div>
-    </div>
-
-    
-  
   );
 }
-

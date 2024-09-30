@@ -1,39 +1,58 @@
 .navbar {
-  top: 0;
   position:fixed;
+  top:40px;
+  left: 0;
+  right: 275px;
+  height:20px;
+  position: fixed;
   left:50%;
-  height: 100px;
-  display: flex; 
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  background-color: #f4f4f4; /* You can change this to whatever color you like */
+  padding: 0 20px;
+  justify-content: space-between;
+  display: flex;
+  
+
+}
+.navbar nav{
+  display:flex;
+  gap:35px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  
+
+}
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Adjust this value to move the line up or down */
+  left: 50px;
+  right: 0;
+  height: 2px;
+  background-color: black;
 }
 
-.wrapper {
-  max-width: 1366px;
-  margin: auto;
+.wrapper{
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers content inside the wrapper */
-  height: 100%;
-  text-align: left;
-  position: relative;
+  gap: 10px;
 }
 
-span {
-  display:fixed;
-  height:50px;
-  left:250px;
+.wrapper h1 {
+  font-size: 16px; 
   font-weight: bold;
-  text-align: center;
-  font-size: 24px; /* Adjust size as needed */
+  margin:0;
 }
 
 .helix-container {
-  height:20px;
-  top: 200px;
   position: fixed;
-  top: 20px; /* Adjust this value to fine-tune the position */
-  left: 270px; /* Adjust this value to fine-tune the position */
+  top: 20px; 
+  left: 270px;
   z-index: 1000; 
+  
+}
+
+@media (max-width: 768px) {
+  .full-menu {
+    display: none;
+  }
 }
