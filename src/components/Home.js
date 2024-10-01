@@ -11,12 +11,24 @@ export default function Home() {
 
   useEffect(() => {
     const wrap = wrapRef.current;
-    const total = 200;
+    const total = 30;  // Number of triangles to generate
 
-    // Generate 200 triangles dynamically
+    // Generate 30 triangles dynamically
     for (let i = 0; i < total; i++) {
       const tri = document.createElement('div');
       tri.classList.add('tri');
+
+      // Assign unique random positions to spread out the triangles across the screen
+      const randomTop = Math.random() * 100;  // Random value between 0% and 100% for viewport height
+      const randomLeft = Math.random() * 100; // Random value between 0% and 100% for viewport width
+      tri.style.top = `${randomTop}%`;
+      tri.style.left = `${randomLeft}%`;
+
+      // Assign random animation delay to each triangle for dynamic effect
+      const randomDelay = Math.random() * 5; // Random delay between 0s and 5s
+      tri.style.animationDelay = `${randomDelay}s`;
+
+      // Append the triangle to the wrap container
       wrap.appendChild(tri);
     }
   }, []);
@@ -24,8 +36,8 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="wrap" ref={wrapRef}></div>
-      {/* Add other components or content for your Home page here */}
       <motion.div className="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+      
       </motion.div>
     </div>
   );
