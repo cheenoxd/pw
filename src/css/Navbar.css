@@ -9,7 +9,7 @@
   padding: 0 20px;
   justify-content: space-between;
   display: flex;
-  
+  z-index: 1000; 
 
 }
 .navbar nav{
@@ -18,7 +18,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  
+  z-index: 1000; 
 
 }
 .navbar::after {
@@ -29,18 +29,21 @@
   right: 0;
   height: 2px;
   background-color: black;
+  z-index: 1000; 
 }
 
 .wrapper{
   display: flex;
   align-items: center;
   gap: 10px;
+  z-index: 1000; 
 }
 
 .wrapper h1 {
   font-size: 16px; 
   font-weight: bold;
   margin:0;
+  z-index: 1000; 
 }
 
 .helix-container {
@@ -54,5 +57,6 @@
 @media (max-width: 768px) {
   .full-menu {
     display: none;
+    z-index: 1000; 
   }
 }

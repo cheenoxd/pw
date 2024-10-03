@@ -52,8 +52,8 @@ body {
   height: 100vh; /* Full viewport height to center vertically */
   width: 100%;
   text-align: center; /* Center text alignment */
-  position: absolute; /* Ensure it takes up full space in the container */
-  top: 0; /* Align at the top to fill the entire height */
+  position: absolute; 
+  top: 0; 
   left: 0;
 }
 

@@ -13,18 +13,14 @@ import Home from './components/Home';
 
 function App() {
   return (
-  <BrowserRouter>
+
     <div>
       
      <Navbar /> 
-   
-        <Routes>
-          <Route index element ={<Home />} />
-          <Route path ="/home" element ={<Home />} />
-          <Route path ="about" element ={<About />} />
-        </Routes>
-        </div>
-  </BrowserRouter>
+     <Home />
+
+   </div>
+ 
   
     
   );

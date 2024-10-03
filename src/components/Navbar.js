@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import '../css/Navbar.css';
 import Sidebar from './Sidebar';
 import { helix } from 'ldrs';
@@ -26,13 +26,12 @@ export default function Navbar() {
         <div className="helix-container">
           <l-helix size="45" speed="2.5" color="white" />
         </div>
-        <h1></h1>
       </div>
       <nav>
-        <a href='/#'>About Me</a>
-        <a href='/#'>Projects</a>
-        <a href='/#'>Resume</a>
-        <a href='/#'>Contact</a>
+        <Link to="about" smooth={true} duration={500}>About Me</Link>
+        <Link to="projects" smooth={true} duration={500}>Projects</Link>
+        <Link to="resume" smooth={true} duration={500}>Resume</Link>
+        <Link to="contact" smooth={true} duration={500}>Contact</Link>
       </nav>
     </div>
   );
