@@ -1,24 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import '../css/Navbar.css';
-import Sidebar from './Sidebar';
 import { helix } from 'ldrs';
+
+// Register helix
 helix.register();
 
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    window.addEventListener('resize', handleResize);
     
+    // Add the event listener to handle window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup function to remove event listener when component unmounts
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  // Define closeMenu function
+  const closeMenu = () => {
+    if (isMobile) {
+      // Add logic here to close the menu if needed
+    }
+  };
 
   return (
     <div className="navbar">
@@ -28,11 +38,21 @@ export default function Navbar() {
         </div>
       </div>
       <nav>
-      <a href="/">Home</a>
-      <a href="#about">About Me</a>
-      <a href='#projects'>Projects</a>
-      <a href='#resume'>Skills</a>
-      <a href='#contact'>Contact</a>
+        <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}>
+          Home
+        </Link>
+        <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
+          About Me
+        </Link>
+        <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
+          Projects
+        </Link>
+        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
+          Skills
+        </Link>
+        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
+          Contact
+        </Link>
       </nav>
     </div>
   );

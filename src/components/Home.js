@@ -52,7 +52,6 @@ export default function Home() {
           Zesan Rahim
         </motion.h1>
       </motion.div>
-      <About/>
     </div>
   );
 }

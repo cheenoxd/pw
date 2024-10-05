@@ -1,0 +1,12 @@
+.project-section {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    flex-direction: column; /* Makes sure the elements inside stack vertically */
+    height: 100vh; 
+    color: #ffffff;
+    padding-left: 180PX;
+    padding-right: 130px;
+    font-size: 24px;
+  
+  }
