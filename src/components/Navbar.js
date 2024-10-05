@@ -28,10 +28,11 @@ export default function Navbar() {
         </div>
       </div>
       <nav>
-        <Link to="about" smooth={true} duration={500}>About Me</Link>
-        <Link to="projects" smooth={true} duration={500}>Projects</Link>
-        <Link to="resume" smooth={true} duration={500}>Resume</Link>
-        <Link to="contact" smooth={true} duration={500}>Contact</Link>
+      <a href="/">Home</a>
+      <a href="#about">About Me</a>
+      <a href='#projects'>Projects</a>
+      <a href='#resume'>Skills</a>
+      <a href='#contact'>Contact</a>
       </nav>
     </div>
   );

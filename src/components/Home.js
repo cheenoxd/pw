@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useRef } from 'react';
-import '../css/Home.css';
-import '../css/TrianglesAnimation.css';  // New CSS for the animated triangles
+import About from './About';
+import '../css/TrianglesAnimation.css'; 
 import { helix } from 'ldrs';
 
 helix.register();
@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     const wrap = wrapRef.current;
-    const total = 50;  // Number of triangles to generate
+    const total = 30;  // Number of triangles to generate
 
     // Generate 30 triangles dynamically
     for (let i = 0; i < total; i++) {
@@ -52,6 +52,7 @@ export default function Home() {
           Zesan Rahim
         </motion.h1>
       </motion.div>
+      <About/>
     </div>
   );
 }
