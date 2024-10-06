@@ -13,6 +13,7 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
   }
   
   /* Link styles */
@@ -25,6 +26,9 @@
     color: #007bff;
   }
   html {
+    
     scroll-behavior: smooth;
+    
   }
+
   

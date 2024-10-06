@@ -1,5 +1,5 @@
 .navbar {
-
+  position: fixed;
   top:40px;
   right: 130px;
   height:20px;
