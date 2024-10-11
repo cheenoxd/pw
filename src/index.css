@@ -1,34 +1,55 @@
 /* Reset some default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Set a base font family and color */
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-  }
-  
-  /* Link styles */
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #007bff;
-  }
-  html {
-    
-    scroll-behavior: smooth;
-    
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Set a base font family and color */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+/* Link styles */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff;
+}
+html {
   
+  scroll-behavior: smooth;
+  
+}
+.scrollable-container {
+  overflow-y: scroll;
+  height: 500px; 
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background:white;
+}
+
+::-webkit-scrollbar-thumb{
+  background:white;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:white;
+
+}
+

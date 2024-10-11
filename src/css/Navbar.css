@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   z-index: 1000; 
+  
 
 }
 .navbar nav{
@@ -60,3 +61,11 @@
     z-index: 1000; 
   }
 }
+.navbar nav a {
+  color: white; /* Or a contrasting color */
+}
+
+.navbar nav a:hover {
+  color: #007bff; /* Different hover color */
+}
+

@@ -1,35 +1,33 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Router, Routes, and Route for navigation
+import Navbar from './components/Navbar'; // Your Navbar component
 import './App.css'; 
-import { BrowserRouter as Router, Routes, Route, createBrowserRouter, BrowserRouter } from 'react-router-dom';
 import About from './components/About'; 
 import Contact from './components/Contact'; 
 import Projects from './components/Projects'; 
-import Resume from './components/Resume';
+import Resume from './components/Resume'; 
 import Home from './components/Home';
-
-
-
+import BlobBackground from './components/Background'; // Background component
 
 export default function App() {
   return (
-
-    <div>
+    <Router> {/* Wrap the app inside Router */}
+      <div>
+        {/* Add BlobBackground as a background */}
       
-     <Navbar /> 
-     <div id="home" className="section">
-        <Home/>
-     </div>
-     <div id="about" className="section">
-        <About/>
-      </div>
-      <div id="projects" className="section">
-        <Projects/>
-      </div>
+        
+        {/* Navbar */}
+        <Navbar /> 
 
-   </div>
- 
-  
-    
+        {/* Define Routes for different sections */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }

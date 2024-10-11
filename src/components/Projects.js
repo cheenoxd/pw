@@ -1,12 +1,14 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import a from "../assets/a.png"
+import InfiniteScroll from "react-infinite-scroll-component";
+import '../css/Projects.css';
 
 const Projects = () => {
   const projectData = [
     {
-      title: "Weather App",
-      description: "A web app to get real-time weather updates. react",
+      title: "Portfolio Website",
+      description: "Personal Website | React, CSS",
       image: a,
       link: "https://en.wikipedia.org/wiki/Memorials_to_George_Floyd",
     },
@@ -26,6 +28,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
+       <h2>Projects</h2>
       {projectData.map((project, index) => (
         <ProjectCard
           key={index}

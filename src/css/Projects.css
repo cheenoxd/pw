@@ -4,9 +4,14 @@
     align-items: center; /* Vertically centers the content */
     flex-direction: column; /* Makes sure the elements inside stack vertically */
     height: 100vh; 
-    color: #ffffff;
+    color: #000000;
     padding-left: 180PX;
     padding-right: 130px;
     font-size: 24px;
   
+  }
+
+  .project-container h2{
+    font-size:100px;
+
   }

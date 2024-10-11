@@ -1,57 +1,115 @@
+import React from "react";
+import "../css/IntroSection.css";
+import Background from "./Background"; // Updated to Background.js
+import { HashLink as Link } from "react-router-hash-link"; // Make sure this is correctly imported
+import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
 import { motion } from "framer-motion";
-import React, { useEffect, useRef } from 'react';
-import About from './About';
-import '../css/TrianglesAnimation.css'; 
-import { helix } from 'ldrs';
 
-helix.register();
-
-export default function Home() {
-  const wrapRef = useRef(null);
-
-  useEffect(() => {
-    const wrap = wrapRef.current;
-    const total = 30;  // Number of triangles to generate
-
-    // Generate 30 triangles dynamically
-    for (let i = 0; i < total; i++) {
-      const tri = document.createElement('div');
-      tri.classList.add('tri');
-
-      
-      const randomTop = Math.random() * 100; 
-      const randomLeft = Math.random() * 100; 
-      tri.style.top = `${randomTop}%`;
-      tri.style.left = `${randomLeft}%`;
-
-      
-      const randomDelay = Math.random() * 5; 
-      tri.style.animationDelay = `${randomDelay}s`;
-
-    
-      wrap.appendChild(tri);
-    }
-  }, []);
-
+const IntroSection = (props) => {
   return (
-    <div className="home-container">
-      <div className="wrap" ref={wrapRef}></div>
-      <motion.div 
-        className="content" 
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
-        transition={{ duration: 2 }}
-      >
-        {/* Animated text added here */}
-        <motion.h1 
-          className="animated-text" 
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+    <div className="intro-section noise" id={props.sectionID}>
+  
+      <div className="isec__left">
+        <motion.div
+          className="text-container"
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 0,
+            },
+          }}
+          initial={{
+            opacity: 0,
+            y: -75,
+          }}
         >
-          Zesan Rahim
-        </motion.h1>
-      </motion.div>
+          <motion.h1
+            className="title"
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 0.5,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+          >
+            hi, i'm eric!
+          </motion.h1>
+          <motion.h2
+            className="subtitle"
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 0.75,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+          >
+            <Link
+              to="/#projects"  // Changed the path to match typical react-router usage
+              smooth
+              className="intro-link animated-underline"
+            >
+              software developer
+            </Link>
+            <div className="bullet-dot" />
+            <a
+              aria-label="Georgia Tech"
+              className="intro-link animated-underline"
+              href="https://www.gatech.edu"
+              target="_blank"
+              rel="noreferrer"
+            >
+              cs student
+            </a>
+            <div className="bullet-dot" />
+            <Link
+              to="/#skills"  // Updated to match the link structure
+              smooth
+              className="intro-link animated-underline"
+            >
+              tech enthusiast
+            </Link>
+          </motion.h2>
+          <motion.div
+            className="cta-container"
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 1,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+          >
+            <Link
+              className="cta-button fill-transition-btn"
+              to="about"  // Updated to reflect proper route structure
+              smooth
+            >
+              follow my career <RightArrow className="cta-icon" />
+            </Link>
+          </motion.div>
+        </motion.div>
+      </div>
+      <div className="isec__right"></div>
     </div>
   );
-}
+};
+
+export default IntroSection;

@@ -1,4 +1,7 @@
 import React from 'react';
+import GithubIcon from '../assets/github-icon.svg';
+
+
 import '../css/ProjectCard.css'; 
 
 const ProjectCard = ({ title, description, image, link }) => {
@@ -10,7 +13,8 @@ const ProjectCard = ({ title, description, image, link }) => {
          <h3 className="project-title">{title}</h3>
          <p className="project-description">{description}</p>
          <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
-          View Project
+           <img src={GithubIcon} alt="GitHub icon" className="link-icon" /> {/* Added icon */}
+           
          </a>
        </div>
      </div>

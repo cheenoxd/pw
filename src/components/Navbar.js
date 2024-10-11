@@ -38,22 +38,11 @@ export default function Navbar() {
         </div>
       </div>
       <nav>
-        <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}>
-          Home
-        </Link>
-        <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
-          About Me
-        </Link>
-        <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
-          Projects
-        </Link>
-        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
-          Skills
-        </Link>
-        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
-          Contact
-        </Link>
-      </nav>
+      <Link smooth to="/#home">Home</Link>
+      <Link smooth to="/#about">About</Link>
+      <Link smooth to="/#projects">Projects</Link>
+      <Link smooth to="/#contact">Contact</Link>
+    </nav>
     </div>
   );
 }

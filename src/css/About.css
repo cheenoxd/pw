@@ -5,6 +5,7 @@
   margin-right:996px;
   margin-bottom:100px;
   color: #5a5957;
+  z-index: 1;
 }
 
 
@@ -18,12 +19,14 @@
   padding-left: 180PX;
   padding-right: 130px;
   font-size: 24px;
-
+  z-index: 20;
 }
 .about-section p {
   margin-bottom: 20px; /* Adds space between paragraphs */
-  line-height: 1.6; /* Improves readability with better line spacing */
+  line-height: 1.6; 
+  z-index: 1;/* Improves readability with better line spacing */
 }
+
 
 
 
