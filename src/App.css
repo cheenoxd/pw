@@ -2,6 +2,6 @@
 .content {
   padding: 20px;
 }
-html {
-  scroll-behavior: smooth;
+body {
+  font-family: 'Merriweather', serif;
 }

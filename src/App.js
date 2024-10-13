@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Home from './components/Home';
 import BlobBackground from './components/Background'; // Background component
+import Skills from './components/Skills';
 
 const SectionWrapper = ({ id, children }) => (
   <section id={id} style={{ padding: '100px 0' }}> {/* Adjust padding if needed */}
@@ -20,7 +21,7 @@ export default function App() {
     <Router> {/* Keep Router for overall navigation */}
       <div>
         {/* Background Component */}
-       <BlobBackground/>
+   
 
         {/* Navbar Component */}
         <Navbar />
@@ -37,14 +38,15 @@ export default function App() {
         <SectionWrapper id="projects">
           <Projects />
         </SectionWrapper>
+        
+        <SectionWrapper id="skills">
+          <Skills/>
+        </SectionWrapper>
 
         <SectionWrapper id="contact">
           <Contact />
         </SectionWrapper>
 
-        <SectionWrapper id="resume">
-        
-        </SectionWrapper>
       </div>
     </Router>
   );

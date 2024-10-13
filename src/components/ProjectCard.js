@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, image, link }) => {
        <div className="project-content">
          <h3 className="project-title">{title}</h3>
          <p className="project-description">{description}</p>
-         <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
+         <a href={link} target="_blank" rel="noopener noreferrer" className="link-icon-container">
            <img src={GithubIcon} alt="GitHub icon" className="link-icon" /> {/* Added icon */}
            
          </a>

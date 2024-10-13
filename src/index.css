@@ -25,31 +25,11 @@ a {
 a:hover {
   color: #007bff;
 }
-html {
-  
-  scroll-behavior: smooth;
-  
-}
-.scrollable-container {
-  overflow-y: scroll;
-  height: 500px; 
-}
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background:white;
-}
-
-::-webkit-scrollbar-thumb{
-  background:white;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background:white;
-
+Copy code
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrollbar */
 }
 

@@ -1,7 +1,6 @@
 import React from "react";
-import "../css/IntroSection.css";
-import Background from "./Background"; // Updated to Background.js
-import { HashLink as Link } from "react-router-hash-link"; // Make sure this is correctly imported
+import "../css/Home.css";
+import { Link } from 'react-scroll';
 import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
 import { motion } from "framer-motion";
 
@@ -30,7 +29,7 @@ const IntroSection = (props) => {
               opacity: 1,
               y: 0,
               transition: {
-                duration: 1,
+                duration: 2,
                 delay: 0.5,
               },
             }}
@@ -57,7 +56,7 @@ const IntroSection = (props) => {
             }}
           >
             <Link
-              to="/#about"  // Changed the path to match typical react-router usage
+              to="projects"  
               smooth
               className="intro-link animated-underline"
             >
@@ -65,13 +64,17 @@ const IntroSection = (props) => {
             </Link>
             <div className="bullet-dot" />
             <a
-             
+               aria-label="Carleton"
+               className="intro-link animated-underline"
+               href="https://carleton.ca/scs/"
+               target="_blank"
+               rel="noreferrer"
             >
               cs student
             </a>
             <div className="bullet-dot" />
             <Link
-              to="/#projects" smooth
+              to="projects" smooth
               className="intro-link animated-underline"
             >
               tech enthusiast

@@ -37,11 +37,11 @@ export default function Navbar() {
       </div>
     </div>
     <nav>
-      <Link to="#home" smooth className="nav-link">Home</Link>
-      <Link to="#about" smooth className="nav-link">About</Link>
-      <Link to="#projects" smooth className="nav-link">Projects</Link>
-      <Link to="#skills" smooth className="nav-link">Skills</Link>
-      <Link to="#contact" smooth className="nav-link">Contact</Link>
+      <Link to="#" smooth className="nav-link">home</Link>
+      <Link to="#about" smooth className="nav-link">about</Link>
+      <Link to="#projects" smooth className="nav-link">projects</Link>
+      <Link to="#skills" smooth className="nav-link">skills</Link>
+      <Link to="#contact" smooth className="nav-link">contact</Link>
     </nav>
   </div>
 
