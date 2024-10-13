@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import '../css/Navbar.css';
+import { HashLink as Link } from 'react-router-hash-link';
 import { helix } from 'ldrs';
+import '../css/Navbar.css';
 
-// Register helix
 helix.register();
 
 export default function Navbar() {
@@ -26,23 +25,25 @@ export default function Navbar() {
   // Define closeMenu function
   const closeMenu = () => {
     if (isMobile) {
-      // Add logic here to close the menu if needed
+
     }
   };
 
   return (
     <div className="navbar">
-      <div className="wrapper">
-        <div className="helix-container">
-          <l-helix size="45" speed="2.5" color="white" />
-        </div>
+    <div className="wrapper">
+      <div className="helix-container">
+        <l-helix size="45" speed="2.5" color="white" />
       </div>
-      <nav>
-      <Link smooth to="/#home">Home</Link>
-      <Link smooth to="/#about">About</Link>
-      <Link smooth to="/#projects">Projects</Link>
-      <Link smooth to="/#contact">Contact</Link>
-    </nav>
     </div>
-  );
+    <nav>
+      <Link to="#home" smooth className="nav-link">Home</Link>
+      <Link to="#about" smooth className="nav-link">About</Link>
+      <Link to="#projects" smooth className="nav-link">Projects</Link>
+      <Link to="#skills" smooth className="nav-link">Skills</Link>
+      <Link to="#contact" smooth className="nav-link">Contact</Link>
+    </nav>
+  </div>
+
+);
 }

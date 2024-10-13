@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const IntroSection = (props) => {
   return (
     <div className="intro-section noise" id={props.sectionID}>
-  
+   
       <div className="isec__left">
         <motion.div
           className="text-container"
@@ -39,7 +39,7 @@ const IntroSection = (props) => {
               y: -20,
             }}
           >
-            hi, i'm eric!
+            hi, i'm zesan!
           </motion.h1>
           <motion.h2
             className="subtitle"
@@ -57,7 +57,7 @@ const IntroSection = (props) => {
             }}
           >
             <Link
-              to="/#projects"  // Changed the path to match typical react-router usage
+              to="/#about"  // Changed the path to match typical react-router usage
               smooth
               className="intro-link animated-underline"
             >
@@ -65,18 +65,13 @@ const IntroSection = (props) => {
             </Link>
             <div className="bullet-dot" />
             <a
-              aria-label="Georgia Tech"
-              className="intro-link animated-underline"
-              href="https://www.gatech.edu"
-              target="_blank"
-              rel="noreferrer"
+             
             >
               cs student
             </a>
             <div className="bullet-dot" />
             <Link
-              to="/#skills"  // Updated to match the link structure
-              smooth
+              to="/#projects" smooth
               className="intro-link animated-underline"
             >
               tech enthusiast
@@ -100,7 +95,8 @@ const IntroSection = (props) => {
             <Link
               className="cta-button fill-transition-btn"
               to="about"  // Updated to reflect proper route structure
-              smooth
+              smooth = {true}
+              duration = {1000}
             >
               follow my career <RightArrow className="cta-icon" />
             </Link>
