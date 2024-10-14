@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio-websitev/static/css/main.6aa0db0c.css",
-    "main.js": "/portfolio-websitev/static/js/main.fe272ad1.js",
-    "static/media/portfolio.png": "/portfolio-websitev/static/media/portfolio.b8fb64edfa081d1a19db.png",
-    "static/media/postgres.svg": "/portfolio-websitev/static/media/postgres.e15cbaca7b89c2a503523092cdb211ba.svg",
-    "static/media/github-icon.svg": "/portfolio-websitev/static/media/github-icon.7d755f28d5542ffe789a80bc61e0407e.svg",
-    "static/media/react.svg": "/portfolio-websitev/static/media/react.211c7d960d6c9c29c8f1dc11916136d5.svg",
-    "static/media/python.svg": "/portfolio-websitev/static/media/python.11dc285818d6800580430e45ac03190c.svg",
-    "static/media/cpp.svg": "/portfolio-websitev/static/media/cpp.276caf8489ed3ec4dcaf2bcec87cb6e3.svg",
-    "static/media/c.svg": "/portfolio-websitev/static/media/c.1a2f00b849e1ebe381e6f2cac7cff852.svg",
-    "static/media/django.svg": "/portfolio-websitev/static/media/django.b997f60ea309f968113630ba2764d2cf.svg",
-    "static/media/git.svg": "/portfolio-websitev/static/media/git.58c27c24c629b1bbffd89f3dec56fb26.svg",
-    "index.html": "/portfolio-websitev/index.html",
-    "static/media/javascript.svg": "/portfolio-websitev/static/media/javascript.4f1f168ff5981100b49b995a9fdd85d1.svg",
-    "static/media/mail.svg": "/portfolio-websitev/static/media/mail.50d58beb1134257ae775823c210be3a7.svg",
-    "static/media/instagram.svg": "/portfolio-websitev/static/media/instagram.7d97391465d60f2909c444d267ea80ff.svg",
-    "static/media/linkedin.svg": "/portfolio-websitev/static/media/linkedin.9e52cf326e0bbf3cd9a3378906c0d35c.svg",
-    "static/media/css.svg": "/portfolio-websitev/static/media/css.fb9997dc000fab900f6617121dacd4e4.svg",
-    "static/media/tensorflow.svg": "/portfolio-websitev/static/media/tensorflow.41282d961fea9dd370737580e9768ef5.svg",
-    "static/media/arrow-right.svg": "/portfolio-websitev/static/media/arrow-right.bc88b22c1fab0bbba6a71f148d79b035.svg",
-    "main.6aa0db0c.css.map": "/portfolio-websitev/static/css/main.6aa0db0c.css.map",
-    "main.fe272ad1.js.map": "/portfolio-websitev/static/js/main.fe272ad1.js.map"
+    "main.css": "/portfolio-website/static/css/main.6aa0db0c.css",
+    "main.js": "/portfolio-website/static/js/main.fbc3fa4a.js",
+    "static/media/portfolio.png": "/portfolio-website/static/media/portfolio.b8fb64edfa081d1a19db.png",
+    "static/media/postgres.svg": "/portfolio-website/static/media/postgres.e15cbaca7b89c2a503523092cdb211ba.svg",
+    "static/media/github-icon.svg": "/portfolio-website/static/media/github-icon.7d755f28d5542ffe789a80bc61e0407e.svg",
+    "static/media/react.svg": "/portfolio-website/static/media/react.211c7d960d6c9c29c8f1dc11916136d5.svg",
+    "static/media/python.svg": "/portfolio-website/static/media/python.11dc285818d6800580430e45ac03190c.svg",
+    "static/media/cpp.svg": "/portfolio-website/static/media/cpp.276caf8489ed3ec4dcaf2bcec87cb6e3.svg",
+    "static/media/c.svg": "/portfolio-website/static/media/c.1a2f00b849e1ebe381e6f2cac7cff852.svg",
+    "static/media/django.svg": "/portfolio-website/static/media/django.b997f60ea309f968113630ba2764d2cf.svg",
+    "static/media/git.svg": "/portfolio-website/static/media/git.58c27c24c629b1bbffd89f3dec56fb26.svg",
+    "index.html": "/portfolio-website/index.html",
+    "static/media/javascript.svg": "/portfolio-website/static/media/javascript.4f1f168ff5981100b49b995a9fdd85d1.svg",
+    "static/media/mail.svg": "/portfolio-website/static/media/mail.50d58beb1134257ae775823c210be3a7.svg",
+    "static/media/instagram.svg": "/portfolio-website/static/media/instagram.7d97391465d60f2909c444d267ea80ff.svg",
+    "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.9e52cf326e0bbf3cd9a3378906c0d35c.svg",
+    "static/media/css.svg": "/portfolio-website/static/media/css.fb9997dc000fab900f6617121dacd4e4.svg",
+    "static/media/tensorflow.svg": "/portfolio-website/static/media/tensorflow.41282d961fea9dd370737580e9768ef5.svg",
+    "static/media/arrow-right.svg": "/portfolio-website/static/media/arrow-right.bc88b22c1fab0bbba6a71f148d79b035.svg",
+    "main.6aa0db0c.css.map": "/portfolio-website/static/css/main.6aa0db0c.css.map",
+    "main.fbc3fa4a.js.map": "/portfolio-website/static/js/main.fbc3fa4a.js.map"
   },
   "entrypoints": [
     "static/css/main.6aa0db0c.css",
-    "static/js/main.fe272ad1.js"
+    "static/js/main.fbc3fa4a.js"
   ]
 }
