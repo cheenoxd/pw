@@ -5,7 +5,6 @@ import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import Resume from './components/Resume';
 import Home from './components/Home';
 import BlobBackground from './components/Background'; // Background component
 import Skills from './components/Skills';
@@ -21,6 +20,8 @@ export default function App() {
     <Router> {/* Keep Router for overall navigation */}
       <div>
         {/* Background Component */}
+        <BlobBackground/>
+        
    
 
         {/* Navbar Component */}

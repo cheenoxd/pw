@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import ProjectCard from './ProjectCard';
-import a from "../assets/a.png";
+import portfoliopng from "../assets/portfolio.png";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import '../css/Projects.css';
+
 
 const Projects = () => {
   const controls = useAnimation();
@@ -23,13 +23,13 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description: " React | CSS",
-      image: a,
-      link: "https://en.wikipedia.org/wiki/Memorials_to_George_Floyd",
+      image: portfoliopng,
+      link: "https://github.com/cheenoxd/portfolio-website",
     },
     {
       title: "Portfolio Website",
       description: "Personal Website | React, CSS",
-      image: a,
+      image: portfoliopng,
       link: "https://en.wikipedia.org/wiki/Memorials_to_George_Floyd",
     },
   ];

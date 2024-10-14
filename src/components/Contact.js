@@ -49,7 +49,7 @@ const ContactSection = (props) => {
             <a
               aria-label="Email"
               className="animated-underline"
-              href="mailto:eric.lu32712@gmail.com"
+              href="mailto:zesanrahim@gmail.com"
             >
               zesanrahim@gmail.com
             </a>
@@ -60,7 +60,7 @@ const ContactSection = (props) => {
           <div className="navbar__socials-container">
             <a
               aria-label="LinkedIn"
-              href="https://www.linkedin.com/in/ericlu327/"
+              href="https://www.linkedin.com/in/zesanrahim/"
               target="_blank"
               rel="noreferrer"
               className="animated-underline"
@@ -69,7 +69,7 @@ const ContactSection = (props) => {
             </a>
             <a
               aria-label="Instagram"
-              href="https://www.instagram.com/asiianeric/"
+              href="https://www.instagram.com/zesanrahim"
               target="_blank"
               rel="noreferrer"
               className="animated-underline"

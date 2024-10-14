@@ -2,14 +2,14 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  height:100vh;
+  height:fitcotent;
   margin:auto;
   padding-left: 180PX;
   padding-right: 130px;
   transform: translateY(-25px);
 }
 .project-card {
-  background-color: grey;
+  background-color: white;
   justify-content: flex;
   border: 10px solid rgba(0, 0, 0, 0.27);
   border-radius: 10px;
