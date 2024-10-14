@@ -32,7 +32,7 @@ export default function Navbar() {
     {
       id: 3,
       name: 'Resume',
-      href: 'https://drive.google.com/file/d/1le062bv5yVDrKYchMyFB_hhcPtKl8ITE/view?usp=sharing',
+      href: 'https://drive.google.com/file/d/1lvmkl-ZEFH5unfFgwUFkojb7J-_7VMaQ/view?usp=sharing',
       icon: <BsFillPersonLinesFill size={25} />,
     },
   ];
