@@ -30,7 +30,7 @@ const Projects = () => {
       title: "Portfolio Website",
       description: "Personal Website | React, CSS",
       image: portfoliopng,
-      link: "https://en.wikipedia.org/wiki/Memorials_to_George_Floyd",
+      link: "",
     },
   ];
 
