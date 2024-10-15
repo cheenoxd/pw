@@ -7,8 +7,11 @@
   padding-left: 180PX;
   padding-right: 130px;
   transform: translateY(-25px);
+  z-index:-1;
+ 
 }
 .project-card {
+  
   background-color: white;
   justify-content: flex;
   border: 10px solid rgba(0, 0, 0, 0.27);
@@ -17,7 +20,7 @@
   width: 750px;
   height:590px;
   margin: 25px;
-  margin-top:60px;
+
   box-shadow: 0 2px 4px rgb(26, 25, 25); /* shadow of box*/
   transition: transform 0.3s;
   padding:20px;
@@ -28,7 +31,7 @@
 .link-icon {
   width: 30px; 
   height: 30px; 
-  margin-left: 8px;
+  margin-left:320px;
   margin-top:5px;
   margin-bottom:-20px;
   transition: transform 0.3s ease, opacity 0.3s ease; 
@@ -79,19 +82,22 @@
 
 .projects-container {
   max-height: 100vh; 
-  padding: 20px;
+  margin-top:10px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;  
-  background-color: #020202; 
- 
+  gap:160px;
+
 }
 .projects-container h2{
    font-size: 32px;
   font-weight: bold;
-  color: grey;
+  color: white;
   padding-left: 180PX;
   padding-right: 130px;
-  
+  margin-top:-50px;
+
+ 
 }
 
 

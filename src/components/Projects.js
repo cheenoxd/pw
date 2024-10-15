@@ -28,10 +28,11 @@ const Projects = () => {
     },
     {
       title: "Portfolio Website",
-      description: "Personal Website | React, CSS",
+      description: " React | CSS",
       image: portfoliopng,
-      link: "",
+      link: "https://github.com/cheenoxd/portfolio-website",
     },
+  
   ];
 
   return (
